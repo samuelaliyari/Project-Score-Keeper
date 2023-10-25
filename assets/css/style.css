@@ -1,3 +1,7 @@
+@font-face {
+  font-family: orbit;
+  src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
 /* ====================================================================
                                 RESET
 =====================================================================*/
@@ -64,8 +68,10 @@ body main .score fieldset div {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10rem;
+  font-size: 7rem;
+  font-weight: 400;
   border-radius: 16px;
+  font-family: orbit;
 }
 body main .buttons {
   display: flex;
