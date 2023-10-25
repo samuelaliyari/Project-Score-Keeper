@@ -95,6 +95,35 @@ body main .away button {
   font-size: 2rem;
   border: none;
 }
+body main .modal {
+  width: 30vw;
+  height: 25vh;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem;
+  position: fixed;
+  top: 20vh;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%);
+}
+body main .modal input {
+  width: 50%;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+body main .modal input[type=submit] {
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem 2rem;
+  display: inline-block;
+  border-radius: 8px;
+  border: none;
+  margin-left: 8px;
+}
 body footer {
   text-align: center;
   margin-top: 4rem;
@@ -104,6 +133,14 @@ body footer a {
   padding: 1rem 3rem;
   display: inline-block;
   border-radius: 8px;
+}
+body footer button {
+  background-color: rgb(255, 255, 255);
+  padding: 1.11rem 2rem;
+  display: inline-block;
+  border-radius: 8px;
+  border: none;
+  margin-left: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

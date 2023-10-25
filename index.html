@@ -10,7 +10,7 @@
     <main>
         <section class="score HomeContainer">
             <fieldset>
-                <legend>Home</legend>
+                <legend id="homeName">Home</legend>
                 <div>
                     <h2 id="scoreHome">0</h2>
                 </div>
@@ -18,7 +18,7 @@
         </section>
         <section class="score AwayContainer">
             <fieldset>
-                <legend>Away</legend>
+                <legend id="awayName">Away</legend>
                 <div>
                     <h2 id="scoreAway">0</h2>
                 </div>
@@ -34,9 +34,15 @@
             <button onclick="scoreAwayChange(2)">+2</button>
             <button onclick="scoreAwayChange(3)">+3</button>
         </section>
+        <section class="modal">
+            <input type="text" placeholder="Home">
+            <input type="text" placeholder="Away">
+            <input type="submit" value="Save" onclick="saveNames()">
+        </section>
     </main>
     <footer>
         <a href="#" onclick="window.location.reload()">Reset</a>
+        <button onclick="showModal()">Nameneingabe</button>
     </footer>
     <script src="./assets/js/main.js"></script>
 </body>
