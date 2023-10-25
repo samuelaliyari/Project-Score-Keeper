@@ -13,6 +13,12 @@ const saveNames = () => {
     homeTitle.textContent = homeName.value;
     awayTitle.textContent = awayName.value;
     modal.style.opacity = "0";
+    if (homeName.value === ""){
+        homeTitle.textContent = "Home";
+    }
+    if (awayName.value === ""){
+        awayTitle.textContent = "Away";
+    }
 }
 
 const scoreHomeChange = (points) =>scoreHome.textContent = Number(scoreHome.textContent) + points ;
