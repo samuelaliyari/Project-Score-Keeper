@@ -1,5 +1,5 @@
 console.log("test")
-const modal = document.body.querySelector(".modal");
+const modal = document.body.querySelector(".modalHolder");
 const homeName = document.body.querySelector(".modal input:nth-of-type(1)");
 const awayName = document.body.querySelector(".modal input:nth-of-type(2)");
 const scoreHome = document.body.querySelector("#scoreHome");

@@ -95,7 +95,13 @@ body main .away button {
   font-size: 2rem;
   border: none;
 }
-body main .modal {
+body main .modalHolder {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+}
+body main .modalHolder .modal {
   width: 30vw;
   height: 25vh;
   background-color: gray;
@@ -109,14 +115,13 @@ body main .modal {
   top: 20vh;
   left: 50%;
   transform: translate(-50%);
-  display: none;
 }
-body main .modal input {
+body main .modalHolder .modal input {
   width: 50%;
   font-size: 1rem;
   padding: 0.3125rem;
 }
-body main .modal input[type=submit] {
+body main .modalHolder .modal input[type=submit] {
   background-color: rgb(255, 255, 255);
   padding: 0.3rem 2rem;
   display: inline-block;
