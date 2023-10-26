@@ -139,8 +139,9 @@ body {
             position: fixed;
             top: 20vh;
             left: 50%;
-            opacity: 0;
+            // opacity: 0;
             transform: translate(-50%);
+            display: none;
             input {
                 width: 50%;
                 font-size: 1rem;

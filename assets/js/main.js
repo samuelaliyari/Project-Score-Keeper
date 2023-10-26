@@ -8,11 +8,11 @@ const homeTitle = document.body.querySelector("#homeName");
 const awayTitle = document.body.querySelector("#awayName");
 
 
-const showModal = () => modal.style.opacity = "0.9";
+const showModal = () => modal.style.display= "flex";
 const saveNames = () => {
     homeTitle.textContent = homeName.value;
     awayTitle.textContent = awayName.value;
-    modal.style.opacity = "0";
+    modal.style.display = "none";
     if (homeName.value === ""){
         homeTitle.textContent = "Home";
     }
